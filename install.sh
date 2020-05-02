@@ -39,4 +39,6 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -qq youtube-dl < /dev/null >
 echo 'Complete!'
 echo
 clear
-figlet 'All Applications are now installed'
+PURPLE="\e[35m"
+printf "${PURPLE}"
+figlet -f standard 'All Applications are now installed'
