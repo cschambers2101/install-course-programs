@@ -6,11 +6,11 @@ Use this script to install some useful programs to your PC
 
 * ffmpeg
 * obs
-* chromium
+* chromium - not installed by default
 * youtube downloader
 * video for linux utilities
 * inkscape
-* openshot
+* openshot - not installed by default
 * gimp
 * figlet
 
