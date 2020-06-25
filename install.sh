@@ -129,7 +129,8 @@ function menu {
         OPTIONS="media development photography useful all quit"
         select opt in $OPTIONS; do
             if [ "$opt" = "quit" ]; then
-                echo 'Quitting software instrallation'
+                all_done
+                echo 'Quitting software installation'
                 exit
             elif [ "$opt" = "media" ]; then
                 echo 'Digital Media Software'
