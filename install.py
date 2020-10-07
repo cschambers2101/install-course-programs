@@ -16,7 +16,7 @@ def update():
 
 def install_programs(programs):
     for prog in programs:
-        os.system(f'sudo apt install {prog}')
+        os.system(f'sudo apt install {prog} -y')
 
 
 def install_snaps(snaps):
