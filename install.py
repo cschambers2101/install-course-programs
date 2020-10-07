@@ -5,6 +5,7 @@ media = ['blender', 'ffmpeg', 'vlc', 'kdenlive', 'obs-studio', 'v4l-utils', 'you
 snaps = ['code']
 photo = ['gimp', 'darktable', 'openshot']
 other = ['inkscape', 'scribus']
+themes = ['blackbird-gtk-theme', 'materia-gtk-theme', 'numix-gtk-theme', 'pop-gtk-theme', 'numix-icon-theme', 'numix-icon-theme-circle', 'papirus-icon-theme', 'pop-icon-theme', 'deepin-icon-theme', 'faenza-icon-theme']
 
 def update():
     os.system('sudo apt update')
@@ -47,6 +48,7 @@ if __name__ == "__main__":
     install_programs(media)
     install_programs(photo)
     install_programs(other)
+    install_programs(themes)
     install_snaps(snaps)
     install_gaming()
 
