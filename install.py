@@ -52,7 +52,7 @@ if __name__ == "__main__":
     update()
     install_programs(utils)
     install_programs(media)
-    install_programs(vidioEditing)
+    # install_programs(vidioEditing)
     # install_programs(photo)
     # install_programs(other)
     # install_programs(themes)
