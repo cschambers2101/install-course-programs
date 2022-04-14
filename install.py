@@ -1,6 +1,6 @@
 import os
 
-utils = ['figlet', 'gnome-tweaks', 'tmux', 'git', 'vim', 'curl', 'pandoc', 'weasyprint', 'ssh']
+utils = ['figlet', 'gnome-tweaks', 'tmux', 'git', 'vim', 'curl', 'pandoc', 'weasyprint', 'ssh', 'neofetch']
 media = ['blender', 'ffmpeg', 'vlc', 'kdenlive', 'obs-studio', 'v4l-utils', 'youtube-dl']
 snaps = ['code']
 photo = ['gimp', 'darktable', 'openshot']
