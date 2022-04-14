@@ -1,11 +1,15 @@
 import os
 
-utils = ['figlet', 'gnome-tweaks', 'tmux', 'git', 'vim', 'curl', 'pandoc', 'weasyprint', 'ssh', 'neofetch', 'python3-venv', 'python3', 'python3-pip']
-media = ['blender', 'ffmpeg', 'vlc', 'kdenlive', 'obs-studio', 'v4l-utils', 'youtube-dl']
+utils = ['figlet', 'gnome-tweaks', 'tmux', 'git', 'vim-gtk', 'curl', 'pandoc', 'weasyprint', 'ssh', 'neofetch',
+         'python3-venv', 'python3', 'python3-pip', 'youtube-dl', 'build-essential', 'cmake', 'gnome-sushi']
+media = ['obs-studio', 'ffmpeg', 'vlc', 'v4l-utils', 'youtube-dl', 'gimp']
+vidioEditing = ['kdenlive', 'blender']
 snaps = ['code']
-photo = ['gimp', 'darktable', 'openshot']
+photo = ['darktable', 'openshot']
 other = ['inkscape', 'scribus']
-themes = ['materia-gtk-theme', 'numix-gtk-theme', 'numix-icon-theme', 'numix-icon-theme-circle', 'papirus-icon-theme', 'faenza-icon-theme']
+themes = ['materia-gtk-theme', 'numix-gtk-theme', 'numix-icon-theme',
+          'numix-icon-theme-circle', 'papirus-icon-theme', 'faenza-icon-theme']
+
 
 def update():
     os.system('sudo apt update')
@@ -27,8 +31,10 @@ def install_snaps(snaps):
 def install_gaming():
     # Install wine staging
     os.system('sudo dpkg --add-architecture i386')
-    os.system('wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -')
-    os.system("sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'")
+    os.system(
+        'wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -')
+    os.system(
+        "sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'")
     os.system('sudo apt update')
     os.system('sudo apt install --install-recommends winehq-staging -y')
 
@@ -46,9 +52,9 @@ if __name__ == "__main__":
     update()
     install_programs(utils)
     install_programs(media)
-    install_programs(photo)
-    install_programs(other)
-    install_programs(themes)
-    #   install_snaps(snaps)
-    #   install_gaming()
-
+    install_programs(vidioEditing)
+    # install_programs(photo)
+    # install_programs(other)
+    # install_programs(themes)
+    install_snaps(snaps)
+    # install_gaming()
