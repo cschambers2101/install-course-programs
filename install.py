@@ -56,5 +56,5 @@ if __name__ == "__main__":
     # install_programs(photo)
     # install_programs(other)
     # install_programs(themes)
-    install_snaps(snaps)
+    # install_snaps(snaps)
     # install_gaming()
