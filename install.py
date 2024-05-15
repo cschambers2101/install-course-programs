@@ -9,7 +9,7 @@ photo = ['darktable', 'openshot']
 other = ['inkscape', 'scribus']
 themes = ['materia-gtk-theme', 'numix-gtk-theme', 'numix-icon-theme',
           'numix-icon-theme-circle', 'papirus-icon-theme', 'faenza-icon-theme']
-
+programming = ['dotnet-sdk-8.0','code']
 
 def update():
     os.system('sudo apt update')
@@ -58,3 +58,4 @@ if __name__ == "__main__":
     install_programs(themes)
     # install_snaps(snaps)
     # install_gaming()
+    install_programs(programming)
