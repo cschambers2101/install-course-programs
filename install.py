@@ -1,8 +1,8 @@
 import os
 
-utils = ['figlet', 'gnome-tweaks', 'tmux', 'git', 'vim-gtk', 'curl', 'pandoc', 'weasyprint', 'ssh', 'neofetch',
-         'python3-venv', 'python3', 'python3-pip', 'youtube-dl', 'build-essential', 'cmake', 'gnome-sushi']
-media = ['obs-studio', 'ffmpeg', 'vlc', 'v4l-utils', 'youtube-dl', 'gimp']
+utils = ['figlet', 'gnome-tweaks', 'tmux', 'git', 'vim-gtk', 'curl', 'pandoc', 'weasyprint', 'ssh',
+         'python3-venv', 'python3', 'python3-pip', 'build-essential', 'cmake', 'gnome-sushi']
+media = ['obs-studio', 'ffmpeg', 'vlc', 'v4l-utils', 'gimp']
 vidioEditing = ['kdenlive', 'blender']
 snaps = ['code']
 photo = ['darktable', 'openshot']
