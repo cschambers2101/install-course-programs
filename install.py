@@ -1,6 +1,6 @@
 import os
 
-<<<<<<< HEAD
+
 utils = ['btop', 'figlet', 'gnome-tweaks', 'tmux', 'git', 'vim-gtk', 'curl', 'pandoc', 'weasyprint', 'ssh',
          'python3-venv', 'python3', 'python3-pip', 'build-essential', 'cmake', 'gnome-sushi']
 media = ['obs-studio', 'ffmpeg', 'vlc', 'v4l-utils', 'gimp']
