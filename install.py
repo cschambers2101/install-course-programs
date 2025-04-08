@@ -95,7 +95,7 @@ def setupConfigFiles():
     copyConfigFile('./rofi.rasi', '~/.config/rofi', 'config.rasi')
 
     # Copy tmux config file
-    copyConfigFile('./tmux.conf', '~/.config/tmux'. 'tmux.conf')
+    copyConfigFile('./tmux.conf', '~/.config/tmux', 'tmux.conf')
 
     # Copy vim config file
     copyConfigFile('./vimrc', '~/.config/vim', 'vimrc')
