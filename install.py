@@ -77,6 +77,7 @@ def setupConfigFiles():
     createDirectory("~/.config/i3")
     createDirectory("~/.config/picom")
     createDirectory("~/.config/tmux")
+    createDirectory("~/.config/rofi")
 
     # Copy sample picom config
     copyConfigFile('/usr/share/doc/picom/examples/picom.sample.conf', '~/.config/picom', 'picom.conf')
@@ -89,6 +90,8 @@ def setupConfigFiles():
     # Copy i3 status config
     copyConfigFile('./i3status.conf', '~/.config/i3', 'i3status.conf')
 
+    # Copy rofi config file
+    copyConfigFile('./rofi.rasi', '~/.config/rofi', 'config.rasi')
 
 def downloadFile(url, save_to):
     """
