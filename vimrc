@@ -21,6 +21,7 @@ Plug 'mattn/emmet-vim'
 Plug 'vimwiki/vimwiki'
 Plug 'preservim/nerdtree'
 Plug 'michal-h21/vimwiki-sync'
+Plug 'github/copilot.vim'
 
 
 " Initialize plugin system
