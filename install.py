@@ -78,7 +78,6 @@ def setupConfigFiles():
     createDirectory("~/.config/picom")
     createDirectory("~/.config/tmux")
     createDirectory("~/.config/rofi")
-    createDirectory("~/.config/vim")
 
     # Copy sample picom config
     copyConfigFile('/usr/share/doc/picom/examples/picom.sample.conf', '~/.config/picom', 'picom.conf')
@@ -98,11 +97,11 @@ def setupConfigFiles():
     copyConfigFile('./tmux.conf', '~/.config/tmux', 'tmux.conf')
 
     # Copy vim config file
-    copyConfigFile('./vimrc', '~/.config/vim', 'vimrc')
+    copyConfigFile('./vimrc', '~/', '.vimrc')
 
     # Copy bash files
-    copyconfigFile('./bash_alaises', '~/', '.bash_aliases')
-    copyconfigFile('./bash_functions', '~/', '.bash_functions')
+    copyConfigFile('./bash_aliases', '~/', '.bash_aliases')
+    copyConfigFile('./bash_functions', '~/', '.bash_functions')
 
 def downloadFile(url, save_to):
     """

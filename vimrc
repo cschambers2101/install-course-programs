@@ -22,6 +22,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'preservim/nerdtree'
 Plug 'michal-h21/vimwiki-sync'
 Plug 'github/copilot.vim'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 
 " Initialize plugin system
