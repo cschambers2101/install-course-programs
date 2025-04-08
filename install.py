@@ -161,6 +161,28 @@ def downloadFontandInstall(font_url):
     except subprocess.CalledProcessError as e:
         print(f"Failed to update font cache: {e}")
 
+
+def install_tmux_plugins():
+    """Runs the tmux plugin installation script."""
+    try:
+        home_dir = os.path.expanduser("~")
+        script_path = os.path.join(home_dir, ".tmux", "plugins", "tpm", "scripts", "install_plugins.sh")
+
+        # Execute the script using subprocess.run
+        result = subprocess.run([script_path], capture_output=True, text=True, check=True)
+
+        print("tmux plugins installation successful.")
+        print("Output:", result.stdout)
+
+    except subprocess.CalledProcessError as e:
+        print(f"Error executing tmux plugin installation script: {e}")
+        print("Error Output:", e.stderr)
+    except FileNotFoundError:
+        print("Error: tmux plugin installation script not found.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+
 if __name__ == "__main__":
     update()
     install_programs(utils)
@@ -170,6 +192,7 @@ if __name__ == "__main__":
     setupConfigFiles()
     downloadFontandInstall("https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/UbuntuMono.zip")
     downloadFontandInstall("https://use.fontawesome.com/releases/v6.7.2/fontawesome-free-6.7.2-desktop.zip?_gl=1*9i1osb*_ga*MTgwMzQzNDg0Ny4xNzQ0MDI1NzMy*_ga_BPMS41FJD2*MTc0NDAyODIwOC4yLjEuMTc0NDAyODIxMi41Ni4wLjA.")
+    install_tmux_plugins()
     # install_programs(media)
     # install_programs(other)
     # install_programs(vidioEditing)

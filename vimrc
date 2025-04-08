@@ -149,4 +149,6 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+" catppuccin colour scheme
+set termguicolors
 colorscheme catppuccin_mocha
