@@ -7,7 +7,7 @@ import zipfile
 import subprocess
 
 i3 = ['i3', 'sddm', 'xfce4-terminal', 'thunar', 'rofi']
-utils = ['btop', 'figlet', 'tmux', 'git', 'vim', 'curl', 'pandoc', 'weasyprint', 'ssh',
+utils = ['fzf', 'btop', 'figlet', 'tmux', 'git', 'vim', 'curl', 'pandoc', 'weasyprint', 'ssh',
          'python3-venv', 'python3', 'python3-pip', 'build-essential', 'cmake', 'picom', 'nitrogen', 'feh', 'lxappearance', 'terminator']
 media = ['obs-studio', 'ffmpeg', 'vlc', 'v4l-utils', 'gimp']
 vidioEditing = ['kdenlive', 'blender']
